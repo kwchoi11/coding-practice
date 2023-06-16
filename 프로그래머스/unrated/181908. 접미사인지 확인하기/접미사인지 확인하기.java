@@ -8,6 +8,8 @@ class Solution {
             String suffix = my_string.substring(my_string.length() - suffixLength);
             if (suffix.equals(is_suffix)) {
                 answer = 1;
+            } else {
+                answer = 0;
             }
         }
         
@@ -16,8 +18,12 @@ class Solution {
 }
 
 // 이런 풀이도 있음.
-// if(my_string.endsWith(is_suffix)) {
+// class Solution {
+//     public int solution(String my_string, String is_suffix) {
+//         if(my_string.endsWith(is_suffix)) {
 //             return 1;
 //         } else {
 //             return 0;
 //         }
+//     }
+// }
