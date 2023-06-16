@@ -14,3 +14,10 @@ class Solution {
         return answer;
     }
 }
+
+// 이런 풀이도 있음.
+// if(my_string.endsWith(is_suffix)) {
+//             return 1;
+//         } else {
+//             return 0;
+//         }
