@@ -17,15 +17,18 @@ class Solution {
                 list.add(num_list[i]);
             }
         } else if (n == 3) {
-            for (int i = a; i < b + 1; i++) {
+            for (int i = a; i <= b; i++) {
                 list.add(num_list[i]);
             }
         } else if (n == 4) {
-            for (int i = a; i < b + 1; i+=c) {
+            for (int i = a; i <= b; i+=c) {
                 list.add(num_list[i]);
             }
         }
-        int[] answer = list.stream().mapToInt(x -> x).toArray();
+        int[] answer = new int[list.size()];
+        for (int i = 0; i < list.size(); i++) {
+            answer[i] = list.get(i);
+        }
         return answer;
     }
 }
