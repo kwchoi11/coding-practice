@@ -10,10 +10,8 @@ class Solution {
                 min = diff;
                 answer = array[i];
                 
-            } else if (diff == min) {
-                if (array[i] < answer) {
-                    answer = array[i];
-                }
+            } else if (diff == min && array[i] < answer) {
+                answer = array[i];
             }
         }
         
