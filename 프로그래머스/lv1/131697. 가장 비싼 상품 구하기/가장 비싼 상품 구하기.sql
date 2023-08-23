@@ -5,3 +5,4 @@ FROM (
     ORDER BY PRICE DESC
     )
 WHERE ROWNUM = 1;
+
